@@ -1,0 +1,18 @@
+/*
+  Importing global.css to use :root customs
+*/
+
+.ClockCss {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  font-size: calc(var(--font-size) * 4.5);
+  color: var(--color);
+  font-weight: var(--font-weight);
+}
