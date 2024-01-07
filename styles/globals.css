@@ -11,6 +11,7 @@
   --component-margin-top: 10px;
   --component-transition: all 0.35s 0.1s ease;
   --letter-spacing: 1px;
+  --fade-in-duration: 2s
 }
 
 * {
