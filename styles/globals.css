@@ -4,14 +4,15 @@
 
 :root {
   --component-position: relative;
-  --font-size: 35px;
+  --font-size: 33px;
   --font-weight: 500;
   --color: white;
   --component-margin-bottom: 2%;
   --component-margin-top: 10px;
+  --compoenent-margin-left: 2%;
   --component-transition: all 0.35s 0.1s ease;
   --letter-spacing: 1px;
-  --fade-in-duration: 2s
+  --fade-in-duration: 1.2s;
 }
 
 * {
@@ -20,6 +21,7 @@
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Neue Haas Grotesk Text Pro",
     "Helvetica Neue", Helvetica, Arial, sans-serif;
+  overflow-wrap: break-word;
 }
 
 html,

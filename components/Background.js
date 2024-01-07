@@ -4,6 +4,7 @@ import styles from "../styles/Background.module.css";
 import Clock from "./Clock.js";
 import Greeting from "./Greeting.js";
 import RandomQuote from "./RandomQuote.js";
+import Bg_Info from "./Bg_Info";
 
 const Background = ({ imageData }) => {
   //Setting the custom searched Image in the URl
@@ -29,6 +30,7 @@ const Background = ({ imageData }) => {
       <Clock clockHours={passingHours} clockMinutes={passingMinutes} />
       <Greeting Hours={callbakHours} Minutes={callbakMinutes} />
       <RandomQuote />
+      <Bg_Info imageData={imageData} />
     </div>
   );
 };

@@ -2,6 +2,18 @@
   Importing global.css to use :root customs
 */
 
+/*
+  Keyframes for the transition effect 
+*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .greetingCss {
   position: relative;
   width: 100%;
@@ -16,4 +28,5 @@
   color: var(--color);
   font-weight: calc(var(--font-weight) - 100);
   text-align: center;
+  animation: fadeIn var(--fade-in-duration) linear forwards;
 }

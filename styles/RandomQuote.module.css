@@ -13,9 +13,9 @@
   /* top: 50%;
       left: 50%;
       transform: translate(-50%, -50%); */
-  font-size: calc(var(--font-size) - 15px);
-  color: var(--color);
+  font-size: calc(var(--font-size) - 13px);
   font-weight: calc(var(--font-weight) - 500);
+  color: var(--color);
   text-align: center;
   font-style: italic;
   letter-spacing: var(--letter-spacing);
@@ -23,13 +23,20 @@
   transition: var(--component-transition);
 }
 .quoteCss:hover {
-    background: red;
+  background: red;
 }
 
 .quoteContent::before {
-    content: open-quote;
+  content: open-quote;
 }
 .quoteContent::after {
-    content: close-quote;
+  content: close-quote;
 }
 
+@media only screen and (max-width: 650px) {
+  .quoteCss {
+    font-size: calc(var(--font-size) - 16px);
+    font-weight: 100;
+    margin-bottom: calc(var(--component-margin-bottom) + 35px);
+  }
+}
